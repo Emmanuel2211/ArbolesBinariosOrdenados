@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module pila</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">pila</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:/home/emmanuel/Documentos/Proyects/python_proyects/EDD_Practica10_ArbolesBin_Ordenados/src/pila.py">/home/emmanuel/Documentos/Proyects/python_proyects/EDD_Practica10_ArbolesBin_Ordenados/src/pila.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="picola.html#PiCola">picola.PiCola</a>(<a href="abc.html#ABC">abc.ABC</a>, <a href="typing.html#Generic">typing.Generic</a>)
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="pila.html#Pila">Pila</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Pila">class <strong>Pila</strong></a>(<a href="picola.html#PiCola">picola.PiCola</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Pila">Pila</a>()&nbsp;-&amp;gt;&nbsp;None<br>
+&nbsp;<br>
+Implementación&nbsp;de&nbsp;una&nbsp;<a href="#Pila">Pila</a>&nbsp;(Stack)&nbsp;basada&nbsp;en&nbsp;el&nbsp;TDA&nbsp;<a href="picola.html#PiCola">PiCola</a>.<br>
+Esta&nbsp;estructura&nbsp;sigue&nbsp;rigurosamente&nbsp;la&nbsp;política&nbsp;de&nbsp;acceso&nbsp;LIFO<br>
+(Last&nbsp;In,&nbsp;First&nbsp;Out),&nbsp;donde&nbsp;el&nbsp;último&nbsp;elemento&nbsp;insertado&nbsp;es&nbsp;siempre<br>
+el&nbsp;primero&nbsp;en&nbsp;ser&nbsp;retirado,&nbsp;manteniendo&nbsp;acceso&nbsp;únicamente&nbsp;a&nbsp;su&nbsp;'tope'.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="pila.html#Pila">Pila</a></dd>
+<dd><a href="picola.html#PiCola">picola.PiCola</a></dd>
+<dd><a href="abc.html#ABC">abc.ABC</a></dd>
+<dd><a href="typing.html#Generic">typing.Generic</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Pila-__eq__"><strong>__eq__</strong></a>(self, otro: object) -&gt; bool</dt><dd><span class="code">Compara&nbsp;la&nbsp;equivalencia&nbsp;secuencial&nbsp;entre&nbsp;dos&nbsp;estructuras&nbsp;tipo&nbsp;<a href="#Pila">Pila</a>.<br>
+Valida&nbsp;que&nbsp;ambas&nbsp;posean&nbsp;el&nbsp;mismo&nbsp;tamaño&nbsp;y&nbsp;que&nbsp;la&nbsp;correspondencia<br>
+de&nbsp;sus&nbsp;elementos&nbsp;sea&nbsp;idéntica&nbsp;desde&nbsp;el&nbsp;tope&nbsp;hasta&nbsp;la&nbsp;base.</span></dd></dl>
+
+<dl><dt><a name="Pila-__init__"><strong>__init__</strong></a>(self) -&gt; None</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<dl><dt><a name="Pila-__str__"><strong>__str__</strong></a>(self) -&gt; str</dt><dd><span class="code">Genera&nbsp;una&nbsp;representación&nbsp;en&nbsp;cadena&nbsp;de&nbsp;la&nbsp;pila&nbsp;respetando&nbsp;el&nbsp;formato:<br>
+/&nbsp;a1&nbsp;//&nbsp;a2&nbsp;/&nbsp;...&nbsp;/&nbsp;an&nbsp;/<br>
+Donde&nbsp;a1&nbsp;representa&nbsp;de&nbsp;manera&nbsp;estricta&nbsp;el&nbsp;tope&nbsp;actual&nbsp;de&nbsp;la&nbsp;pila.</span></dd></dl>
+
+<dl><dt><a name="Pila-devolver_tamanio"><strong>devolver_tamanio</strong></a>(self) -&gt; int</dt><dd><span class="code">Retorna&nbsp;la&nbsp;cantidad&nbsp;actual&nbsp;de&nbsp;elementos&nbsp;retenidos&nbsp;dentro&nbsp;de&nbsp;la&nbsp;estructura.</span></dd></dl>
+
+<dl><dt><a name="Pila-esta_vacia"><strong>esta_vacia</strong></a>(self) -&gt; bool</dt><dd><span class="code">Evalúa&nbsp;el&nbsp;estado&nbsp;lógico&nbsp;de&nbsp;la&nbsp;pila&nbsp;comprobando&nbsp;su&nbsp;cardinalidad.<br>
+Devuelve&nbsp;True&nbsp;si&nbsp;la&nbsp;estructura&nbsp;no&nbsp;contiene&nbsp;elementos,&nbsp;False&nbsp;en&nbsp;caso&nbsp;contrario.</span></dd></dl>
+
+<dl><dt><a name="Pila-meter"><strong>meter</strong></a>(self, elemento: T) -&gt; None</dt><dd><span class="code">Inserta&nbsp;un&nbsp;nuevo&nbsp;elemento&nbsp;en&nbsp;la&nbsp;pila.<br>
+El&nbsp;elemento&nbsp;es&nbsp;encapsulado&nbsp;en&nbsp;un&nbsp;nodo&nbsp;y&nbsp;anexado&nbsp;al&nbsp;tope&nbsp;de&nbsp;la&nbsp;estructura,<br>
+actualizando&nbsp;el&nbsp;puntero&nbsp;para&nbsp;convertirlo&nbsp;en&nbsp;el&nbsp;nuevo&nbsp;elemento&nbsp;accesible.</span></dd></dl>
+
+<dl><dt><a name="Pila-mira"><strong>mira</strong></a>(self) -&gt; T</dt><dd><span class="code">Devuelve&nbsp;el&nbsp;valor&nbsp;del&nbsp;elemento&nbsp;situado&nbsp;en&nbsp;el&nbsp;tope&nbsp;de&nbsp;la&nbsp;pila<br>
+sin&nbsp;alterar&nbsp;la&nbsp;estructura&nbsp;ni&nbsp;remover&nbsp;el&nbsp;nodo.<br>
+Levanta&nbsp;una&nbsp;excepción&nbsp;si&nbsp;la&nbsp;pila&nbsp;se&nbsp;encuentra&nbsp;vacía.</span></dd></dl>
+
+<dl><dt><a name="Pila-sacar"><strong>sacar</strong></a>(self) -&gt; T</dt><dd><span class="code">Elimina&nbsp;y&nbsp;devuelve&nbsp;el&nbsp;elemento&nbsp;residente&nbsp;en&nbsp;el&nbsp;tope&nbsp;de&nbsp;la&nbsp;pila.<br>
+Levanta&nbsp;una&nbsp;excepción&nbsp;de&nbsp;tipo&nbsp;IndexError&nbsp;en&nbsp;caso&nbsp;de&nbsp;intentar&nbsp;operar<br>
+sobre&nbsp;una&nbsp;estructura&nbsp;carente&nbsp;de&nbsp;elementos.</span></dd></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__abstractmethods__</strong> = frozenset()</dl>
+
+<dl><dt><strong>__hash__</strong> = None</dl>
+
+<dl><dt><strong>__orig_bases__</strong> = (picola.PiCola[~T],)</dl>
+
+<dl><dt><strong>__parameters__</strong> = (~T,)</dl>
+
+<hr>
+Data descriptors inherited from <a href="picola.html#PiCola">picola.PiCola</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+<hr>
+Class methods inherited from <a href="typing.html#Generic">typing.Generic</a>:<br>
+<dl><dt><a name="Pila-__class_getitem__"><strong>__class_getitem__</strong></a>(...)</dt><dd><span class="code">Parameterizes&nbsp;a&nbsp;generic&nbsp;class.<br>
+&nbsp;<br>
+At&nbsp;least,&nbsp;parameterizing&nbsp;a&nbsp;generic&nbsp;class&nbsp;is&nbsp;the&nbsp;*main*&nbsp;thing&nbsp;this<br>
+method&nbsp;does.&nbsp;For&nbsp;example,&nbsp;for&nbsp;some&nbsp;generic&nbsp;class&nbsp;`Foo`,&nbsp;this&nbsp;is&nbsp;called<br>
+when&nbsp;we&nbsp;do&nbsp;`Foo[int]`&nbsp;-&nbsp;there,&nbsp;with&nbsp;`cls=Foo`&nbsp;and&nbsp;`params=int`.<br>
+&nbsp;<br>
+However,&nbsp;note&nbsp;that&nbsp;this&nbsp;method&nbsp;is&nbsp;also&nbsp;called&nbsp;when&nbsp;defining&nbsp;generic<br>
+classes&nbsp;in&nbsp;the&nbsp;first&nbsp;place&nbsp;with&nbsp;`class&nbsp;Foo[T]:&nbsp;...`.</span></dd></dl>
+
+<dl><dt><a name="Pila-__init_subclass__"><strong>__init_subclass__</strong></a>(...)</dt><dd><span class="code">Function&nbsp;to&nbsp;initialize&nbsp;subclasses.</span></dd></dl>
+
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+    
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>Optional</strong> = typing.Optional<br>
+<strong>T</strong> = ~T</td></tr></table>
+</body></html>
